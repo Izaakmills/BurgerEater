@@ -1,24 +1,39 @@
 <h1>Burger Eater</h1>
-<form>
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-6">
-        <div class="form-group">
-          <label for="formGroupExampleInput">Add Burger</label>
-          <input type="text" class="form-control " id="formGroupExampleInput" placeholder="Cheeseburger">
-          <br>
-          <button type="submit" id="newBurger" class="btn btn-primary mb-1">Add Burger</button>
-        </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="form-group">
+        <label for="formGroupExampleInput">Add Burger</label>
+        <input type="text" class="form-control " id="formGroupExampleInput" placeholder="Cheeseburger">
+        <br>
+        <button type="submit" id="newBurger" class="btn btn-primary mb-1">Add Burger</button>
       </div>
     </div>
-  </div>
-</form>
 
-<table class="table">
-  <tbody id ="burgerField">
+  {{!-- card displays --}} {{!--
+  <div class="row"> --}}
+    <div class="col-sm-4">
+      <div class="card" style="width: 18rem;">
+        <div class="card-header">
+          Uneaten Burgers
+        </div>
+        <ul class="list-group list-group-flush" id="uneatenList">
+        </ul>
+      </div>
 
-  </tbody>
-</table>
+      {{!-- --}}
 
+      <div class="card" style="width: 18rem;">
+        <div class="card-header">
+          Eaten Burgers
+        </div>
+        <ul class="list-group list-group-flush" id="eatenList">
+        </ul>
+      </div>
+    </div>
+    {{!-- </div> --}}
+
+</div>
 
 </form>
