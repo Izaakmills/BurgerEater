@@ -1,5 +1,3 @@
-document.addEventListener("DOMContentLoaded", function() {
-    document.getElementById("newBurger").addEventListener("onClick", function () {
-        console.log("son of a bitch")
-    })
+document.getElementById("newBurger").addEventListener("click", function(){
+    console.log("dude it worked")
 })

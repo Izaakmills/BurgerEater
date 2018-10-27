@@ -1,39 +1,44 @@
-<h1>Burger Eater</h1>
+<div class="row">
+  <div class="col-sm-12">
+    <h1>Burger Eater</h1>
+  </div>
+</div>
 
 <div class="container">
   <div class="row">
     <div class="col-sm-6">
       <div class="form-group">
-        <label for="formGroupExampleInput">Add Burger</label>
-        <input type="text" class="form-control " id="formGroupExampleInput" placeholder="Cheeseburger">
+        <label for="newBurger">Add Burger</label>
+        <input type="text" class="form-control " id="newBurger" placeholder="Cheeseburger">
         <br>
-        <button type="submit" id="newBurger" class="btn btn-primary mb-1">Add Burger</button>
+        <button type="submit" id="newBurgerBtn" class="btn btn-primary mb-1">Add Burger</button>
       </div>
     </div>
 
-  {{!-- card displays --}} {{!--
-  <div class="row"> --}}
-    <div class="col-sm-4">
-      <div class="card" style="width: 18rem;">
-        <div class="card-header">
-          Uneaten Burgers
+    {{!-- card displays --}} {{!--
+    <div class="row"> --}}
+      <div class="col-sm-4">
+        <div class="card" style="width: 18rem;">
+          <div class="card-header">
+            Uneaten Burgers
+          </div>
+          <ul class="list-group list-group-flush" id="uneatenList">
+          </ul>
         </div>
-        <ul class="list-group list-group-flush" id="uneatenList">
-        </ul>
-      </div>
 
-      {{!-- --}}
+        {{!-- --}}
 
-      <div class="card" style="width: 18rem;">
-        <div class="card-header">
-          Eaten Burgers
+        <div class="card" style="width: 18rem;">
+          <div class="card-header">
+            Eaten Burgers
+          </div>
+          <ul class="list-group list-group-flush" id="eatenList">
+          </ul>
         </div>
-        <ul class="list-group list-group-flush" id="eatenList">
-        </ul>
       </div>
-    </div>
-    {{!-- </div> --}}
+      {{!-- </div> --}}
 
+  </div>
 </div>
 
 </form>
