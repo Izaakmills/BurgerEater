@@ -19,9 +19,6 @@ app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
 // Import routes and give the server access to them.
-const routes = require("./app/routes/htmlroutes")
-
-app.use(routes)
 
 app.get("/", (req, res) => {
   res.render("index");
