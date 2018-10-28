@@ -2,7 +2,7 @@
 
 ##Purpose
 
-*Simple user generated CRUD application using burgers
+Simple user generated CRUD application using burgers
 
 ##Packages / Technology used Used
 
