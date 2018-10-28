@@ -5,3 +5,7 @@ h1{
 ul{
     list-style-type:"none";
 }
+.btn-warning{
+    font-size:12px;
+    font-weight:bold;
+}
